@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+      <h2>Challenge 1: Your age in Days</h2>
+
+      <div class="flex-box-container-1">
+          <div>
+            <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+           </div>
+
+            <div>
+              <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+      </div>
+
+      <div class="flex-box-container-1">
+          <div id="flex-box-result">
+
+          </div>
+      </div>
+
+   </div>
+
+   <div class="container-2">
+
+     <h2>Challenge 2: Cat Generator</h2>
+
+     <div>
+        <button class="btn btn-success" id="cat-generator" onclick="generate()"> Generate</button>
+     </div>
+
+
+      <div class="flex-box-container-2" id="flex-gen-cat">
+
+   
+      </div>
+
+      <div class="container-3">
+        <h2> Challenge 3: Rock, Paper and Scissors </h2>
+
+            <div class="flex-box-rps" id="flex-box-div">
+                <img id ="rock"src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" 
+                alt="" height="150" width="150" onclick="rpsGame(this)">
+ 
+                <img id="paper" src="http://images.clipartpanda.com/paper-clip-art-ncXp5zBcB.png" 
+                alt="" height="150" width="150" onclick="rpsGame(this)">
+
+                <img id="scissors" src="http://images.clipartpanda.com/scissors-clip-art-11949839942140777322scissors.svg.med.png"
+                 height="150" width="150" alt="" onclick="rpsGame(this)">  
+
+            </div>
+          
+      </div>
+
+   </div>
+
+   <div class="container-4">
+     <h2 id="change-my-color">Challenge 4: Change the color of all buttons!</h2>
+     <div class="flex-box-pick-color">
+
+      <form action="">
+        <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+          <option value="random">Random</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="reset">Reset</option>
+        </select>
+
+      </form>
+
+       <button class="btn btn-primary">Facebook</button>
+       <button class="btn btn-danger">Youtube</button>
+       <button class="btn btn-warning">Snapchat</button>
+       <button class="btn btn-success">Trello</button>
+     </div>
+     
+   </div>
+
+
+
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
